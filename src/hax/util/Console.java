@@ -138,30 +138,12 @@ public class Console{
      * If parameters are left blank, no prompt is printed.
      * A second string parameter can be introduced as a confirmation message to the user once input is received.
      *
-     * @return the number inputed by the user.
-     */
-    public static int inputInt(String prompt){
-        Scanner input = new Scanner( System.in );
-        write(prompt + " ");
-        int number = input.nextInt();
-        return number;
-    }
-
-    /**
-     * Gets an int from a console as user input.
-     *
-     * If parameter is a string, that string is printed as a prompt for the user.
-     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
-     * If parameters are left blank, no prompt is printed.
-     * A second string parameter can be introduced as a confirmation message to the user once input is received.
-     *
      * @return the number entered by the user.
      */
-    public static int inputInt(String prompt , String color){
+    public static String inputLine(){
         Scanner input = new Scanner( System.in );
-        write(prompt + " " , color);
-        int number = input.nextInt();
-        return number;
+        String line = input.nextLine();
+        return line;
     }
 
     /**
@@ -208,6 +190,94 @@ public class Console{
      *
      * @return the line entered by the user.
      */
+    public static String inputLine(String prompt , String color , String answer){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        String line = input.nextLine();
+        write_();
+        write_(answer);
+        return line;
+    }
+
+    /**
+     * Gets an int from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the line entered by the user.
+     */
+    public static String inputLine(String prompt , String color , String answer , String answerColor){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        String line = input.nextLine();
+        write_();
+        write_(answer , answerColor);
+        return line;
+    }
+
+    /**
+     * Gets an int from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number inputed by the user.
+     */
+    public static int inputInt(){
+        Scanner input = new Scanner( System.in );
+        int number = input.nextInt();
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number inputed by the user.
+     */
+    public static int inputInt(String prompt){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " ");
+        int number = input.nextInt();
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number entered by the user.
+     */
+    public static int inputInt(String prompt , String color){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        int number = input.nextInt();
+        return number;
+    }
+
+    /**
+     * Gets an int from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the line entered by the user.
+     */
     public static int inputInt(String prompt , String color , String answer){
         Scanner input = new Scanner( System.in );
         write(prompt + " " , color);
@@ -227,17 +297,17 @@ public class Console{
      *
      * @return the number inputed by the user.
      */
-    public static int inputInt(String prompt , String color , String answer , String exitColor){
+    public static int inputInt(String prompt , String color , String answer , String answerColor){
         Scanner input = new Scanner( System.in );
         write(prompt + " " , color);
         int number = input.nextInt();
         write_();
-        write_(answer , exitColor);
+        write_(answer , answerColor);
         return number;
     }
 
     /**
-     * Gets an int from a console as user input.
+     * Gets an int or a double from a console as user input.
      *
      * If parameter is a string, that string is printed as a prompt for the user.
      * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
@@ -246,9 +316,81 @@ public class Console{
      *
      * @return the number inputed by the user.
      */
-    public static int inputInt(){
+    public static double inputDouble(){
         Scanner input = new Scanner( System.in );
-        int number = input.nextInt();
+        double number = input.nextDouble();
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number inputed by the user.
+     */
+    public static double inputDouble(String prompt){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " ");
+        double number = input.nextDouble();
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number entered by the user.
+     */
+    public static double inputDouble(String prompt , String color){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        double number = input.nextDouble();
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number entered by the user.
+     */
+    public static double inputDouble(String prompt , String color , String answer){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        double number = input.nextDouble();
+        write_();
+        write_(answer);
+        return number;
+    }
+
+    /**
+     * Gets an int or a double from a console as user input.
+     *
+     * If parameter is a string, that string is printed as a prompt for the user.
+     * If parameters are a string and a valid ANSI color, the string is printed in that color as a prompt for the user.
+     * If parameters are left blank, no prompt is printed.
+     * A second string parameter can be introduced as a confirmation message to the user once input is received.
+     *
+     * @return the number entered by the user.
+     */
+    public static double inputDouble(String prompt , String color , String answer , String answerColor){
+        Scanner input = new Scanner( System.in );
+        write(prompt + " " , color);
+        double number = input.nextDouble();
+        write_();
+        write_(answer , answerColor);
         return number;
     }
 
