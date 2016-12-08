@@ -26,9 +26,11 @@ hax
 │           └─Tree
 │   
 └─util
-    └─Console
-    └─GUI
-    └─Numbers
+│   └─Console
+│   └─GUI
+│   └─Numbers
+│
+└─Res
 ```
 Much more to be added soon.
 
