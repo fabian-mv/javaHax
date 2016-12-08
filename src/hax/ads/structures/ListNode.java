@@ -1,4 +1,4 @@
 package hax.ads.structures;
 
-public class Lists {
+public class ListNode {
 }

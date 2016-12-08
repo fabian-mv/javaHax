@@ -1,9 +1,15 @@
 package hax;
 
+/**
+ * Resources for all the classes in this jar.
+ *
+ * @author Machetazo
+ * @version 0.1 December 2016
+ */
 public class Res {
 
     /**
-     * ANSI color exit codes.
+     * ANSI color escape codes.
      */
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";

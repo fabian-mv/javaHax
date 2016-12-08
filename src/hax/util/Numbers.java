@@ -2,6 +2,12 @@ package hax.util;
 
 import java.util.Random;
 
+/**
+ * Useful class with commonly used methods related to numbers and math in Java.
+ *
+ * @author Machetazo
+ * @version 0.1 December 2016
+ */
 public class Numbers {
 
     /**
@@ -19,7 +25,7 @@ public class Numbers {
     }
 
     /**
-     * Converts stuff into a string.
+     * Converts a numeric value into a string.
      *
      * @param number number that will be converted into a string.
      * @return string version of the number.
@@ -29,7 +35,7 @@ public class Numbers {
     }
 
     /**
-     * Converts stuff into a string.
+     * Converts a numeric value into a string.
      *
      * @param number number that will be converted into a string.
      * @return string version of the number.

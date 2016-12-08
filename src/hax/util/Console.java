@@ -5,7 +5,8 @@ import java.util.Scanner;
 import hax.Res;
 
 /**
- * Useful class with commonly used methods/hax.ads.console/stuff in Java
+ * Useful class with commonly used methods for console applications in Java
+ *
  * @author Machetazo
  * @version 0.1 December 2016
  */
@@ -41,7 +42,7 @@ public class Console{
      * If parameters are a string and a valid ANSI color, the string is printed in that color.
      * Everything is printed with println.
      *
-     * @param blankLines amount of blank lines to be printed into hax.ads.console.
+     * @param blankLines amount of blank lines to be printed into console.
      */
     public static void write_(int blankLines){
         for(int i=0 ; i<blankLines ; i++) {
@@ -68,7 +69,7 @@ public class Console{
      * If parameters are a string and a valid ANSI color, the string is printed in that color.
      * Everything is printed with println.
      *
-     * @param text text that will be printed into hax.ads.console.
+     * @param text text that will be printed into console.
      */
     public static void write_(String text){
         System.out.println(text);
@@ -92,7 +93,7 @@ public class Console{
      * Everything is printed with println.
      *
      * @param text text that will be printed into hax.ads.console.
-     * @param color color in which the text will be printed into hax.ads.console.
+     * @param color color in which the text will be printed into console.
      */
     public static void write_(String text , String color){
         System.out.println(color + text + Res.ANSI_RESET);
@@ -108,6 +109,7 @@ public class Console{
 
     /**
      * Clears the console.
+     * Doesn't work during runtime for some reason.
      */
     public static void flush(){
         System.out.print("\033[H\033[2J");
