@@ -1,4 +1,4 @@
 package hax.ads.structures;
 
-public class Tree {
+public class Tree{
 }

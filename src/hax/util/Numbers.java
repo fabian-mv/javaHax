@@ -8,7 +8,7 @@ import java.util.Random;
  * @author Machetazo
  * @version 0.1 December 2016
  */
-public class Numbers {
+public class Numbers{
 
     /**
      * Generates a random integer

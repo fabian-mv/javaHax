@@ -1,8 +1,9 @@
 package hax.util;
 
+
+import hax.Res;
 import java.awt.Toolkit;
 import java.util.Scanner;
-import hax.Res;
 
 /**
  * Useful class with commonly used methods for console applications in Java

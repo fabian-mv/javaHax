@@ -1,4 +1,6 @@
 package hax.ads.algorithms;
 
-public class Search {
+public class Search{
+
+
 }
