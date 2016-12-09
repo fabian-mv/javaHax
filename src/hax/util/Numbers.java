@@ -25,20 +25,20 @@ public class Numbers {
     }
 
     /**
-     * Converts a numeric value into a string.
+     * Converts a numeric value (int) into a string.
      *
-     * @param number number that will be converted into a string.
-     * @return string version of the number.
+     * @param number int that will be converted into a string.
+     * @return string of the number.
      */
     public static String str(int number){
         return String.valueOf(number);
     }
 
     /**
-     * Converts a numeric value into a string.
+     * Converts a numeric value (double) into a string.
      *
-     * @param number number that will be converted into a string.
-     * @return string version of the number.
+     * @param number double that will be converted into a string.
+     * @return string of the number.
      */
     public static String str(double number){
         return String.valueOf(number);
