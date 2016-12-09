@@ -13,12 +13,12 @@ Contains classes for sorting and searching algorithms, data strictures including
 Yes, this is essentially a re-make of the Java API. I am doing it for fun, to learn new stuff and to implement things in my own way. 
 <br/></br>
 ####JAR Structure
-```
+```html
 hax   
 │
 └─ads
 │   └─algorithms
-│   │       └─Search
+│   │       └─<style color="red">Search</style>
 │   │       └─Sort
 │   │
 │   └─structures
