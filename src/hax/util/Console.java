@@ -3,6 +3,7 @@ package hax.util;
 
 import hax.Res;
 import java.awt.Toolkit;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -407,6 +408,42 @@ public class Console{
         }
         write_();
     }
+
+    /**
+     * Exception manager.
+     * @param e exception.
+     */
+    public static void error(IOException e){
+        System.err.println(e.getMessage());
+        e.printStackTrace();
+    }
+    /**
+     * Exception manager.
+     * @param e exception.
+     */
+    public static void error(InterruptedException e){
+        System.err.println(e.getMessage());
+        e.printStackTrace();
+    }
+    /**
+     * Exception manager.
+     * @param e exception.
+     */
+    public static void error(Exception e){
+        System.err.println(e.getMessage());
+        e.printStackTrace();
+    }
+
+    /**
+     * Exception manager.
+     * @param e exception.
+     */
+    public static void error(NumberFormatException e){
+        System.err.println(e.getMessage());
+        e.printStackTrace();
+    }
+
+
 
 
 

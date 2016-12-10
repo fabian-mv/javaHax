@@ -44,4 +44,18 @@ public class Numbers{
         return String.valueOf(number);
     }
 
+    /**
+     *
+     * @param number String version of an int.
+     * @return numeric value of the string.
+     */
+    public static int _int(String number){
+        try{
+            return Integer.parseInt(number);
+        } catch(NumberFormatException e){
+            Console.error(e);
+            return -1;
+        }
+    }
+
 }

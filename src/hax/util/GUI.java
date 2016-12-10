@@ -56,7 +56,7 @@ public class GUI{
     }
 
     /**
-     * Displays a dialog with a message and an input bar for the user to type in.
+     * Displays a dialog with a message and a text field for the user to type in.
      *
      * @param message message to display in the Input Dialog.
      * @return a String containing the characters typed by the user.
@@ -71,7 +71,7 @@ public class GUI{
     }
 
     /**
-     * Displays a dialog with a message and an input bar for the user to type in.
+     * Displays a dialog with a message and a text field for the user to type in.
      *
      * @param component parent component.
      * @param message message to display in the Input Dialog.
@@ -87,7 +87,7 @@ public class GUI{
     }
 
     /**
-     * Displays a dialog with a message and an input bar with a default initial value for the user to type in.
+     * Displays a dialog with a message and a text field with a default initial value for the user to type in.
      *
      * @param message message to display in the Input Dialog.
      * @param defaultInitialValue default initial value in the input dialog.
@@ -103,7 +103,7 @@ public class GUI{
     }
 
     /**
-     * Displays a dialog with a message and an input bar with a default initial value for the user to type in.
+     * Displays a dialog with a message and a text field with a default initial value for the user to type in.
      *
      * @param component parent component.
      * @param message message to display in the Input Dialog.
@@ -112,6 +112,25 @@ public class GUI{
      */
     public static String inputDialog(Component component , String message , String defaultInitialValue){
         String text = JOptionPane.showInputDialog(component , message , defaultInitialValue);
+        if(text.isEmpty()){
+            return "";
+        } else{
+            return text;
+        }
+    }
+
+    /**
+     * Displays a dialog with a message and a text field with a title and a certain message type for the user to type in.
+     *
+     *
+     * @param component parent component.
+     * @param message message to display in the Input Dialog.
+     * @param title title of the dialog.
+     * @param messageType type of the Message Dialog
+     * @return a String containing the characters typed by the user.
+     */
+    public static String inputDialog(Component component , String message , String title , int messageType){
+        String text = JOptionPane.showInputDialog(component , message , title , messageType);
         if(text.isEmpty()){
             return "";
         } else{
