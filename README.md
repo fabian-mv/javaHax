@@ -35,7 +35,7 @@ hax
 ```
 Much more to be added soon.
 <br/></br>
-####JARs Needed
+####External Libraries (JARs) Needed
 
 -JSON (get it [here](https://search.maven.org/#search%7Cga%7C1%7Cg%3Aorg.json%20AND%20a%3Ajson).)
 
