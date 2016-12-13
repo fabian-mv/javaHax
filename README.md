@@ -20,16 +20,17 @@ hax
 │   │       └─Sort
 │   │
 │   └─structures
-│           └─ListNode
 │           └─List
-│           └─TreeNode
+│           └─ListNode
 │           └─Tree
+│           └─TreeNode
 │   
 └─util
 │   └─Console
 │   └─GUI
-│   └─Numbers
 │   └─Net (checking usability)
+│   └─Numbers
+│   └─Runtime
 │
 └─Res
 ```
