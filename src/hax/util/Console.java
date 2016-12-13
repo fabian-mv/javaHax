@@ -1,6 +1,5 @@
 package hax.util;
 
-
 import hax.Res;
 import java.awt.Toolkit;
 import java.io.IOException;
