@@ -31,7 +31,8 @@ public class Res{
     public static final String ANSI_WHITE = "\u001B[37m";
 
     /**
-     * Message types. Used by the JOptionPane to determine what icon to display and possibly what behavior to give based on the type.
+     * Message types. Used by the JOptionPane to determine what icon to display
+     * and possibly what behavior to give based on the type.
      */
     /** Used for error messages. */
     public static final int  ERROR_MESSAGE = 0;

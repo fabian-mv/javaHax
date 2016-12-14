@@ -1,3 +1,4 @@
+import hax.util.Numbers;
 import hax.util.Console;
 
 /**
@@ -8,7 +9,12 @@ public class javaHax_tester{
     public static void main(String[] args) {
 
 
-        Console.write_("Hello World");
+        double average = 1;
+
+        Console.write(Numbers._str(average));
+
+
+
 
 
     }
