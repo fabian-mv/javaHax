@@ -25,7 +25,6 @@ public class GUI{
      * Displays a dialog with a message.
      *
      * @param component parent component.
-     * @param component parent component.
      * @param message message to display in the Message Dialog.
      */
     public static void messageDialog(Component component , String message){
@@ -137,14 +136,4 @@ public class GUI{
             return text;
         }
     }
-
-
-
-
-
-
-
-
-
-
 }
