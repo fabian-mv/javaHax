@@ -1,16 +1,16 @@
-package hax.ads.structures;
+package hax.ads.structures.linkedList;
 
-public class List{
-
-	private lNode head;
+public class LinkedList {
+	
+	private LinkedListNode head;
 	private int size;
-
-	public List(lNode head , int size) {
+	
+	public LinkedList(LinkedListNode head , int size) {
 		this.head = head;
 		this.size = size;
 	}
-
-
+	
+	
 	public boolean isEmpty(){
 		return (this.head == null);
 	}
@@ -21,17 +21,18 @@ public class List{
 
 	}
 	*/
-
-
-	public lNode getHead() {
+	
+	
+	public LinkedListNode getHead() {
 		return head;
 	}
-
+	
 	public int getSize() {
 		return size;
 	}
-
-	public void setHead(lNode pHead) {
+	
+	public void setHead(LinkedListNode pHead) {
 		this.head = pHead;
 	}
 }
+
