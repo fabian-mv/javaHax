@@ -1,4 +1,4 @@
-package linkedDB.structures.linkedList;
+package hax.ads.structures.linkedList;
 
 /**
  * Singly Linked List node class.
@@ -13,7 +13,7 @@ public class LinkedListNode<T> {
 	private LinkedListNode<T> next;
 	
 	/**
-	 * Constructor takes all arguments and initialises.
+	 * Constructor takes all arguments and initializes.
 	 *
 	 * @param pValue value of the node
 	 * @param pNext reference to next node
@@ -38,6 +38,7 @@ public class LinkedListNode<T> {
 	 *
 	 * @return string representation of the value
 	 */
+	@Override
 	public String toString(){
 		return this.value.toString();
 	}
