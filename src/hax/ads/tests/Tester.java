@@ -17,7 +17,6 @@ public class Tester {
      * @param amountOfValuesToGenerate amount fo integers to generate
      * @return an array with that many integers
      */
-    @Test
     public static Integer[] generateInts(int amountOfValuesToGenerate){
         Integer[] values = new Integer[amountOfValuesToGenerate];
 
