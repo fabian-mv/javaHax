@@ -92,4 +92,24 @@ public class Numbers{
         }
     }
 
+    /**
+     * Returns true if number is even, otherwise return false
+     *
+     * @param number number to be analyzed
+     * @return true if number is even, otherwise return false
+     */
+    public static boolean isEven(int number){
+        return (number % 2 == 0);
+    }
+
+    /**
+     * Returns true if number is odd, otherwise return false
+     *
+     * @param number number to be analyzed
+     * @return true if number is odd, otherwise return false
+     */
+    public static boolean isOdd(int number){
+        return (!isEven(number));
+    }
+
 }
