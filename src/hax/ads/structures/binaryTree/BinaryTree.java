@@ -115,7 +115,6 @@ public class BinaryTree<T> {
                 return null;
             }
         }
-
         return ref;
     }
 
