@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javaHax.iml" filepath="$PROJECT_DIR$/javaHax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.tec.algo.search/org.tec.algo.search.iml" filepath="$PROJECT_DIR$/org.tec.algo.search/org.tec.algo.search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.tec.algo.sort/org.tec.algo.sort.iml" filepath="$PROJECT_DIR$/org.tec.algo.sort/org.tec.algo.sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.tec.datastructures/org.tec.datastructures.iml" filepath="$PROJECT_DIR$/org.tec.datastructures/org.tec.datastructures.iml" />
     </modules>
   </component>
 </project>
