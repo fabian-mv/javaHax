@@ -1,5 +1,5 @@
 # javaHax.jar
-##### Writen by Fabian Montero (machetazo)
+##### Writen by Fabian Montero
 ###### Version 0.1 December 2016 - alpha as fuck
 
 
